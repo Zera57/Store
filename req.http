@@ -1,0 +1,42 @@
+### Add Tomato
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "id": "6fe830a2-d115-4524-8449-a6bd4b3f7307",
+  "name": "Tomato",
+  "description": "It's red!!!",
+  "cost": 123,
+  "count": 12
+}
+
+### Add Milk
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "name": "Milk",
+  "description": "It's delicious, especially with Oreos",
+  "cost": 75,
+  "count": 25
+}
+
+### Add Oreo
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "name": "Oreo",
+  "description": "Not that tasty alone, but with Milk it's turning to tasty snack",
+  "cost": 89,
+  "count": 25
+}
+
+### Get all products
+GET http://localhost:8080/product/all
+
+### Get Tomato
+GET http://localhost:8080/product?id=6fe830a2-d115-4524-8449-a6bd4b3f7307
+
+### Delete Tomato
+DELETE http://localhost:8080/product/delete?id=6fe830a2-d115-4524-8449-a6bd4b3f7307
