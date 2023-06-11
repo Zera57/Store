@@ -40,3 +40,12 @@ GET http://localhost:8080/product?id=6fe830a2-d115-4524-8449-a6bd4b3f7307
 
 ### Delete Tomato
 DELETE http://localhost:8080/product/delete?id=6fe830a2-d115-4524-8449-a6bd4b3f7307
+
+### Register account
+POST http://localhost:8080/account/register
+Content-Type: application/json
+
+{
+  "userName": "Lexa",
+  "password": "1"
+}
