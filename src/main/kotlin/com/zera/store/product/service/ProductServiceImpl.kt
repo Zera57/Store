@@ -12,6 +12,10 @@ class ProductServiceImpl (val productRepository: ProductRepository) : ProductSer
         return productRepository.findById(id).orElseThrow { EntityNotFoundException() }
     }
 
+    override fun get(ids: List<UUID>): List<Product> {
+        return productRepository.findAllByIds(ids)
+    }
+
     override fun get(): List<Product> {
         return productRepository.findAll()
     }
