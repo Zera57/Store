@@ -7,6 +7,7 @@ import java.util.*
 @Service
 interface ProductService {
     fun get(id : UUID) : Product
+    fun get(ids: List<UUID>) : List<Product>
     fun get() : List<Product>
     fun add(product : Product): UUID
     fun delete(id : UUID)

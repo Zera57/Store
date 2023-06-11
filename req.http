@@ -23,6 +23,7 @@ Content-Type: application/json
 
 ### Add Oreo
 POST http://localhost:8080/product/add
+Cookie: JSESSIONID=89168E895BA4659CA5A4D774FAACA149
 Content-Type: application/json
 
 {
@@ -46,6 +47,21 @@ POST http://localhost:8080/account/register
 Content-Type: application/json
 
 {
-  "userName": "Lexa",
-  "password": "1"
+  "userName": "Azat",
+  "password": "lox"
+}
+
+###
+POST http://localhost:8080/purchase/save
+Cookie: JSESSIONID=6178757E112A04CF0ACA4854E97F3878
+Content-Type: application/json
+
+
+{
+  "purchases": [
+    {
+      "amount": 10,
+      "productId": "e9c088e4-6de6-4e3f-a557-5599a90c9d67"
+    }
+  ]
 }
